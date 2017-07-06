@@ -25,10 +25,12 @@ There are a total of seven levels.
 ### generateRandomSequence()
 The AI first generates a random array consisting of colors red, green, blue or yellow. The length of the array depends on the level. The higher the level, the higher the length of the array. Each level increases the array length by one. The first level starts with an array length of 4. Since there are a total of seven levels. The maximum array length is 10 (4 + 1 * 6).
 
-```function generateRandomSequence () {
+```
+function generateRandomSequence () {
 for (i = 0; i < colors.length; i++) {
   level.push(colors[getRandomIntInclusive()]);
-}```
+}
+```
 
 ### changeColorRed()
 
