@@ -48,7 +48,7 @@ function init () {
     words.removeChild(h4);
   }
   keys.forEach( function (div) {
-    var keyColor = div.id;
+    // var keyColor = div.id;
     document.addEventListener ('keydown', pushButton);
     // console.log(div.id);
   });
