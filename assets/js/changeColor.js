@@ -10,7 +10,7 @@ function changeColorRed () {
 }
 
 function changeColorGreen () {
-  greenKey.style.backgroundColor = 'lightgreen';
+  greenKey.style.backgroundColor = 'darkgreen';
   redSound.play();
   setTimeout(reutrnColorGreen, 400);
 }
@@ -22,7 +22,7 @@ function changeColorBlue () {
 }
 
 function changeColorYellow () {
-  yellowKey.style.backgroundColor = 'gold';
+  yellowKey.style.backgroundColor = 'darkgoldenrod';
   redSound.play();
   setTimeout(reutrnColorYellow, 400);
 }
