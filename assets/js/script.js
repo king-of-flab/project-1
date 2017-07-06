@@ -97,13 +97,11 @@ function init () {
       }
       if (allButtons.length === 0) {
       var restart = document.createElement('button');
-
       var restartText = document.createTextNode("Restart");
       restart.appendChild(restartText);
       document.body.appendChild(restart);
       restart.addEventListener('click', function () {
         generateRandomSequence();
-        // removeStartButton();
         body.removeChild(restart);
         h1.innerHTML = "";
         h2.innerHTML = "Level";
@@ -113,6 +111,29 @@ return; //why did it work after writing this?
     }
     // console.log(level1);
     if (checkEqual()) {
+      // var h4 = document.querySelector('h4');
+      if(level.length === 10) {
+        goodJob = document.createElement('h5');
+        goodJob.innerHTML = "CONGRAGULATIONS!";
+        words.appendChild(goodJob);
+
+        allButtons = document.querySelectorAll('button');
+        if (allButtons.length === 0) {
+        var restart = document.createElement('button');
+        var restartText = document.createTextNode("Restart");
+        restart.appendChild(restartText);
+        document.body.appendChild(restart);
+        restart.addEventListener('click', function () {
+          generateRandomSequence();
+          body.removeChild(restart);
+          h1.innerHTML = "";
+          h2.innerHTML = "Level";
+          h3.innerHTML = "1";
+          words.removeChild(goodJob)
+        });}
+
+        return;
+      }
       levelNumber += 1;
       var levelNumberString = levelNumber.toString();
       console.log(levelNumber);
@@ -126,7 +147,6 @@ return; //why did it work after writing this?
       words.appendChild(goodJob);
       setTimeout(removeH4, 1000);
 
-      // var h4 = document.querySelector('h4');
 
 
 

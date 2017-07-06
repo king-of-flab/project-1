@@ -112,6 +112,16 @@ for (i = 0; i < colors.length; i++) {
   } else if (level[8] === 'yellow') {
     setTimeout(changeColorYellow, 9000);
   }
+
+  if (level[9] === 'red') {
+    setTimeout(changeColorRed, 10000);
+  } else if (level[9] === 'green') {
+    setTimeout(changeColorGreen, 10000);
+  } else if (level[9] === 'blue') {
+    setTimeout(changeColorBlue, 10000);
+  } else if (level[9] === 'yellow') {
+    setTimeout(changeColorYellow, 10000);
+  }
 }
 
 function checkEqual () {
