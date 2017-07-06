@@ -101,3 +101,14 @@ button:hover {
 	border: solid 1px #2A4E77;
   transition-duration: 0.2s;
 }
+ p {
+   margin-top: -100px;
+   margin-bottom: 80px;
+   text-decoration: none;
+ }
+
+a {
+  text-decoration: none;
+  color: white;
+  word-spacing: 8px;
+}

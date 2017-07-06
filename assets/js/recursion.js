@@ -11,6 +11,10 @@ function removeStartButton () {
   h1.innerHTML = "";
 }
 
+function removeInstructions () {
+  words.removeChild(instructions);
+}
+
 
 function generateRandomSequence () {
 for (i = 0; i < colors.length; i++) {

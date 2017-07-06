@@ -8,6 +8,7 @@ var button = document.querySelector('button');
 var h1 = document.querySelector('h1');
 var h2 = document.querySelector('h2');
 var h3 = document.querySelector('h3');
+var instructions = document.querySelector('p');
 var levelNumber = 1;
 
 function init () {
@@ -18,6 +19,7 @@ function init () {
   startButton.addEventListener ('click', function () {
     setTimeout(generateRandomSequence, 2000);
     removeStartButton();
+    removeInstructions();
     h2.innerHTML="Level";
     h3.innerHTML="1";
   });
