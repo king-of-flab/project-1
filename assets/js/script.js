@@ -129,7 +129,7 @@ return; //why did it work after writing this?
           h1.innerHTML = "";
           h2.innerHTML = "Level";
           h3.innerHTML = "1";
-          words.removeChild(goodJob)
+          words.removeChild(goodJob);
         });}
 
         return;

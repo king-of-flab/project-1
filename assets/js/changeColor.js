@@ -3,12 +3,6 @@ var greenKey = document.querySelector('#green');
 var blueKey = document.querySelector('#blue');
 var yellowKey = document.querySelector('#yellow');
 
-
-// function changeColor(color) {
-//   color.style.backgroundColor = 'white'
-//   color.play()
-// }
-
 function changeColorRed () {
   redKey.style.backgroundColor = 'darkred';
   redSound.play();
@@ -33,13 +27,6 @@ function changeColorYellow () {
   setTimeout(reutrnColorYellow, 400);
 }
 
-// function changeColorBlack () {
-//   var blackKey = document.querySelector('#black');
-//   blackKey.style.backgroundColor = 'white';
-//   // redSound.play();
-//   setTimeout(reutrnColorBlack, 100);
-// }
-
 function reutrnColorRed () {
   redKey.style.backgroundColor = 'red';
 }
@@ -54,9 +41,4 @@ function reutrnColorBlue () {
 
 function reutrnColorYellow () {
   yellowKey.style.backgroundColor = 'yellow';
-}
-
-function reutrnColorBlack () {
-  var blackKey = document.querySelector('#black');
-  blackKey.style.backgroundColor = 'black';
 }

@@ -24,18 +24,39 @@ for (i = 0; i < colors.length; i++) {
 //
 // }
 
-for (var i = 1; i <= 10; i++) {
-  if (level[i-1] === 'red') {
-    setTimeout(changeColorRed, i * 1000);
-  } else if (level[i-1] === 'green') {
-    setTimeout(changeColorGreen, i * 1000);
-  } else if (level[i-1] === 'blue') {
-    setTimeout(changeColorBlue, i * 1000);
-  } else if (level[i-1] === 'yellow') {
-    setTimeout(changeColorYellow, i * 1000);
+  for (var i = 1; i <= 10; i++) {
+    if (level[i-1] === 'red') {
+      setTimeout(changeColorRed, i * 1000);
+    } else if (level[i-1] === 'green') {
+      setTimeout(changeColorGreen, i * 1000);
+    } else if (level[i-1] === 'blue') {
+      setTimeout(changeColorBlue, i * 1000);
+    } else if (level[i-1] === 'yellow') {
+      setTimeout(changeColorYellow, i * 1000);
+    }
+  }  // if (level[1] === 'red') {
+}
+
+
+function checkEqual () {
+  if (keyedColors.length !== level.length) {
+    return false;
+  }
+  for (i = 0; i < keyedColors.length; i++) {
+    if (keyedColors[i] !== level[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function checkNotEqual () {
+  for (i = 0; i < keyedColors.length; i++ ) {
+    if (keyedColors[i] !== level[i]) {
+      return true;
+    }
   }
 }
-  // if (level[1] === 'red') {
   //   setTimeout(changeColorRed, 2000);
   // } else if (level[1] === 'green') {
   //   setTimeout(changeColorGreen, 2000);
@@ -123,25 +144,5 @@ for (var i = 1; i <= 10; i++) {
   //   setTimeout(changeColorBlue, 10000);
   // } else if (level[9] === 'yellow') {
   //   setTimeout(changeColorYellow, 10000);
+
   // }
-}
-
-function checkEqual () {
-  if (keyedColors.length !== level.length) {
-    return false;
-  }
-  for (i = 0; i < keyedColors.length; i++) {
-    if (keyedColors[i] !== level[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function checkNotEqual () {
-for (i = 0; i < keyedColors.length; i++ ) {
-  if (keyedColors[i] !== level[i]) {
-    return true;
-    }
-  }
-}
