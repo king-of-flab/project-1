@@ -2,11 +2,14 @@
 document.addEventListener('DOMContentLoaded', init);
 var startButton = document.querySelector('#button');
 var body = document.querySelector('body');
+var words = document.querySelector('#words');
 var allButtons = document.querySelectorAll('button');
+var button = document.querySelector('button');
 var h1 = document.querySelector('h1');
 var h2 = document.querySelector('h2');
 var h3 = document.querySelector('h3');
 var levelNumber = 1;
+
 function init () {
   var keys = document.querySelectorAll('.colors div');
   // var level1 = ["red", "blue", "green", "yellow"];
@@ -26,10 +29,24 @@ function init () {
     h3.innerHTML="1";
   });
 
+  button.addEventListener('mouseover', goodLuckText);
+  function goodLuckText () {
+    button.innerHTML = 'GOOD LUCK!';
+  }
+
+  button.addEventListener('mouseleave', startText);
+  function startText () {
+    button.innerHTML = 'start';
+  }
+
   function returnTrue () {
     return true;
   }
 
+  function removeH4 () {
+    var h4 = document.querySelector('h4');
+    words.removeChild(h4);
+  }
   keys.forEach( function (div) {
     var keyColor = div.id;
     document.addEventListener ('keydown', pushButton);
@@ -100,10 +117,19 @@ return; //why did it work after writing this?
       var levelNumberString = levelNumber.toString();
       console.log(levelNumber);
       // alert('good job');
-      h1.innerHTML = 'Good Job!';
+      // h1.innerHTML = 'Good Job!';
       h2.innerHTML = 'Level';
       h3.innerHTML = levelNumberString;
       h1.style.fontcolor = "yellow";
+      var goodJob = document.createElement('h4');
+      goodJob.innerHTML = "GOOD JOB!";
+      words.appendChild(goodJob);
+      setTimeout(removeH4, 1000);
+
+      // var h4 = document.querySelector('h4');
+
+
+
       // var newColor = document.createElement('div');
       // colorClass.appendChild(newColor);
       // newColor.id = 'black';

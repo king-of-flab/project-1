@@ -39,8 +39,32 @@
 /*button {
   display: block;
 }*/
+h1 {
+font-size: 75px;
+margin-top: -20px;
+margin-bottom: 100px;
+}
+
+h2 {
+font-size: 60px;
+margin-bottom: -55px;
+}
+
+h3 {
+  font-size: 45px;
+  margin-bottom: px;
+}
+
+h4 {
+  font-size: 300px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
 
 #words {
+  font-family: 'Anton', cursive;
   text-align: center;
   color: white;
 }
@@ -49,6 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  vertical-align: middle;
 }
 
 body {
@@ -57,5 +82,27 @@ body {
   /*background-color: black;*/
   /*background-size: 1500px 800px;*/
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
 
+}
+
+button {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  padding: 25px 15px;
+  background: hotpink;
+  color: white;
+  border-radius: 50px;
+  margin-top: 60px;
+  border: solid 1px pink;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #356094;
+	border: solid 1px #2A4E77;
+  transition-duration: 0.2s;
 }
