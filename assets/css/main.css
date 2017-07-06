@@ -4,10 +4,6 @@
   width: 24%;
   display: inline-block;
   border-radius: 100px
-  /*border-style: solid;*/
-  /*border-color: white;*/
-  /*border: 200px*/
-
 }
 
 #green {
@@ -34,11 +30,6 @@
   border-radius: 100px
 }
 
-
-
-/*button {
-  display: block;
-}*/
 h1 {
 font-size: 75px;
 margin-top: -20px;
@@ -87,14 +78,10 @@ h5 {
 body {
   background-image: url('https://newevolutiondesigns.com/images/freebies/retro-wallpaper-1.jpg');
   background-position: center;
-  /*background-color: black;*/
-  /*background-size: 1500px 800px;*/
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: center;*/
-
 }
 
 button {
